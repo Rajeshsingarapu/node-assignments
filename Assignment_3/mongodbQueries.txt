@@ -1,0 +1,19 @@
+1.creating a new user in mongodb
+----------------------------------
+db.newuser.insert({"name:"rajesh","branch":"it"})
+
+2.get user list
+----------------
+db.user.find()
+
+3.get sigle user
+-----------------
+db.user.findOne({"_id":userid})
+
+4.update user
+--------------
+db.user.updateOne({"name":"rajesh"},{$set:{"city":"hyd"}})
+
+5.delete user
+--------------
+db.user.remove({"_id":userid})
